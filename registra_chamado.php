@@ -13,7 +13,7 @@
 
 
 	//abrindo o arquivo
-	$arquivo = fopen('../../app_help_desk/arquivo.hd', 'a');
+	$arquivo = fopen('arquivo.hd', 'a');
 	//escrevendo o texto
 	fwrite($arquivo, $texto);
 	//fechando o arquivo
