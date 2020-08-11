@@ -1,4 +1,4 @@
- <?php 
+<?php
 
- $_POST['email']
- $_POST['senha']
+	require "../../app_help_desk/valida_login.php";
+?>
