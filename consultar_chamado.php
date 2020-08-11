@@ -69,16 +69,16 @@ fclose($arquivo);
             $chamado_dados = explode('#', $chamado);
 
             //
-            // if ($_SESSION['perfil_id'] == 2) {
-            //   //só vamos exibir o chamado, se ele foi criado pelo usuário
-            //   if ($_SESSION['id'] != $chamado_dados[0]) {
-            //     continue;
-            //   }
-            // }
+            if ($_SESSION['perfil_id'] == 2) {
+              //só vamos exibir o chamado, se ele foi criado pelo usuário
+              if ($_SESSION['id'] != $chamado_dados[0]) {
+                continue;
+              }
+            }
 
-            // if (count($chamado_dados) < 3) {
-            //   continue;
-            // }
+            if (count($chamado_dados) < 3) {
+              continue;
+            }
 
             ?>
             <div class="card mb-3 bg-light">
